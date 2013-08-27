@@ -1,0 +1,15 @@
+Ubuntu/Debian用のkeepalive等で使うVIPを作るマニフェストです。
+実行したあとは自動でインターフェイスが上がります。
+
+※ arp ignoreはsysctrlモジュールが公開されいるので、そちらを使うと便利でしょう。
+
+example:
+
+node 'ap1', 'ap2' {
+    keepalived_vip::real_server { "lo:12": lvs_ip => "192.168.1.1" }
+    keepalived_vip::real_server { "lo:12": lvs_ip => "192.168.1.2" }
+}
+
+author:
+
+@SatchanP

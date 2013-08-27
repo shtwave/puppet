@@ -1,0 +1,4 @@
+#!/bin/bash
+
+/sbin/ifconfig <%= name %> up
+/sbin/ifconfig <%= name %> <%= lvs_ip  %> netmask 255.255.255.255
