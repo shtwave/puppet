@@ -1,4 +1,4 @@
-Ubuntu/Debian用のkeepalive等で使うVIPを作るマニフェストです。
+Ubuntu/Debian用のkeepalivedのDRで使うリアルサーバのループバックインターフェイスを作るmanifestです。
 実行したあとは自動でインターフェイスが上がります。
 
 ※ arp ignoreはsysctrlモジュールが公開されいるので、そちらを使うと便利でしょう。
