@@ -4,11 +4,6 @@
 #
 class keepalived_vip {
 
-    $packages = [
-        "ipvsadm",
-        "keepalived",
-    ]
-
     define real_server($lvs_ip="") {
         $filename = regsubst($name, ':', '')
         file { "/etc/network/if-pre-up.d/${filename}":
