@@ -6,8 +6,8 @@ Ubuntu/Debian用のkeepalive等で使うVIPを作るマニフェストです。
 example:
 
 node 'ap1', 'ap2' {
-    keepalived_vip::real_server { "lo:12": lvs_ip => "192.168.1.1" }
-    keepalived_vip::real_server { "lo:12": lvs_ip => "192.168.1.2" }
+    keepalived_vip::real_server { "lo:11": lvs_ip => "192.168.1.11" }
+    keepalived_vip::real_server { "lo:12": lvs_ip => "192.168.1.12" }
 }
 
 author:
